@@ -13,22 +13,61 @@ void main() {
             fontSize: 22,
           ),
         ),
-        body: SafeArea(
-          child: Container(
-            height: 200,
-            width: 300,
-            margin: EdgeInsets.all(20),
-            color: const Color.fromARGB(255, 159, 21, 233),
-            child: Text('Hello World',
-            style: TextStyle(
-              color: const Color.fromARGB(255, 255, 255, 186),
-              fontWeight: FontWeight.w700,
-              fontSize: 20
-            ),)
-            
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+                child: Center(
+                  child: Text(
+                    '1',
+                    style: TextStyle(
+                      color: const Color.fromARGB(255, 255, 235, 163),
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text(
+                    '2',
+                    style: TextStyle(
+                      color: const Color.fromARGB(255, 255, 235, 163),
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    '3',
+                    style: TextStyle(
+                      color: const Color.fromARGB(255, 255, 235, 163),
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-        )
-        
+        ),
       ),
     ),
   );
